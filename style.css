@@ -1,9 +1,83 @@
-*
-{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(0,0,0,0.3);
+    background: #333;
+  }
+
+
+  
+  h1,
+  h2 {
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  
+  .navbar {
+    background: rgba(20, 19, 19, 0.863);
+    color: rgb(3, 191, 238);
+    height: 60px;
+  }
+  
+  .navbar .logo {
+      font-size: x-large;
+      font-weight: bold;
+  }
+  .navbar .container{
+    display: flex;
+  }
+
+  .navbar a {
+    color:rgb(3, 191, 238);
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      background: transparent;
+      cursor: pointer;
+  }
+
+  .navbar a:hover {
+        color: #F3C693;
+    }
+
+  
+
+  .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+  }
+
+  .navbar ul {
+      display: flex;
+   
+  }
+
+  .navbar ul li {
+      margin-left: 20px;
+      
+  }
+ 
 .full-page
 {
     height: 100%;
@@ -13,41 +87,12 @@
 	background-size: cover;
 	position: absolute;
 }
-.navbar
-{
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    padding-left: 50px;
-    padding-right: 30px;
-    padding-top: 50px;
-}
-nav
-{
-    flex: 1;
-    text-align: right;
-}
-nav ul 
-{
-    display: inline-block;
-    list-style: none;
-}
-nav ul li
-{
-    display: inline-block;
-    margin-right: 70px;
-}
-nav ul li a
-{
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    font-family: sans-serif;
-}
+
 nav ul li button
 {
     font-size: 20px;
-    color: white;
+    color:rgb(3, 191, 238);
+    font-weight: bold;
     outline: none;
     border: none;
     background: transparent;
@@ -56,11 +101,11 @@ nav ul li button
 }
 nav ul li button:hover
 {
-    color: aqua;
+    color:#F3C693;
 }
 nav ul li a:hover
 {
-    color: aqua;
+    color: #F3C693;
 }
 a
 {
